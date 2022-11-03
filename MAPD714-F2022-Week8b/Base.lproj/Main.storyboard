@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD714_F2022_Week8b" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k2v-LJ-j7Y">
+                                <rect key="frame" x="0.0" y="135" width="430" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0KH-od-Qg7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u1d-gj-roJ"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-iy-skv">
+                                <rect key="frame" x="34" y="78" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Left"/>
+                                <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ws5-MP-haV">
+                                <rect key="frame" x="768" y="78" width="64" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Right"/>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k2v-LJ-j7Y" secondAttribute="trailing" id="Cko-ls-9tM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k2v-LJ-j7Y" secondAttribute="bottom" id="D8g-fD-MD6"/>
+                            <constraint firstItem="rZg-iy-skv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="EXV-Mu-voc"/>
+                            <constraint firstItem="Ws5-MP-haV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="768" id="IGX-xs-8FT"/>
+                            <constraint firstItem="k2v-LJ-j7Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L6b-dF-jP1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rZg-iy-skv" secondAttribute="trailing" constant="321" id="XIL-19-JWu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rZg-iy-skv" secondAttribute="trailing" constant="823" id="d4b-7q-TZP"/>
+                            <constraint firstItem="k2v-LJ-j7Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="gNr-TZ-LzX"/>
+                            <constraint firstItem="rZg-iy-skv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="hRt-yy-7bp"/>
+                            <constraint firstItem="Ws5-MP-haV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="m6v-Rc-jZi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ws5-MP-haV" secondAttribute="trailing" constant="100" id="oyg-4K-gyA"/>
+                            <constraint firstItem="rZg-iy-skv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="px9-ih-BK7"/>
+                            <constraint firstItem="rZg-iy-skv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="vk8-al-Nqb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XIL-19-JWu"/>
+                                <exclude reference="d4b-7q-TZP"/>
+                                <exclude reference="oyg-4K-gyA"/>
+                                <exclude reference="EXV-Mu-voc"/>
+                                <exclude reference="hRt-yy-7bp"/>
+                                <exclude reference="px9-ih-BK7"/>
+                                <exclude reference="vk8-al-Nqb"/>
+                                <exclude reference="IGX-xs-8FT"/>
+                                <exclude reference="m6v-Rc-jZi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="d4b-7q-TZP"/>
+                                <include reference="oyg-4K-gyA"/>
+                                <include reference="EXV-Mu-voc"/>
+                                <include reference="vk8-al-Nqb"/>
+                                <include reference="IGX-xs-8FT"/>
+                                <include reference="m6v-Rc-jZi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XIL-19-JWu"/>
+                                <include reference="hRt-yy-7bp"/>
+                                <include reference="px9-ih-BK7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1345" y="560"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
